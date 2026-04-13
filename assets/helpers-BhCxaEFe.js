@@ -1,0 +1,1 @@
+var e=e=>`$${e.toFixed(2)}`,t=(e,t)=>e.length>t?e.substring(0,t)+`...`:e,n=(e,t)=>e.sort(()=>.5-Math.random()).slice(0,t);export{n,t as r,e as t};

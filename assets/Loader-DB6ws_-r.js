@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-D-oznMWL.js";var t=e(),n=({size:e=`md`})=>(0,t.jsx)(`div`,{className:`animate-spin rounded-full border-2 border-gray-300 border-t-blue-600 ${{sm:`w-4 h-4`,md:`w-8 h-8`,lg:`w-12 h-12`}[e]}`});export{n as t};
