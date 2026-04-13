@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+/* Base Styles */
+* {
+  @apply transition-colors duration-200;
+}
+
+body {
+  @apply bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 font-sans;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold;
+}
+
+h1 {
+  @apply text-4xl;
+  margin: 1rem 0;
+}
+
+h2 {
+  @apply text-3xl;
+  margin: 0.5rem 0 0.5rem;
+}
+
+h3 {
+  @apply text-2xl;
+}
+
+p {
+  margin: 0;
+}
+
+/* Cards */
+@layer components {
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-lg shadow-md dark:shadow-lg border border-gray-200 dark:border-gray-700;
+  }
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  body {
+    font-size: 14px;
+  }
+  
+  h1 {
+    @apply text-2xl;
+  }
+  
+  h2 {
+    @apply text-xl;
+  }
+}
