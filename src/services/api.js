@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://fakestoreapi.com';
+const API_BASE_URL = 'https://dummyjson.com';
 
 export const api = {
   getProducts: () => fetch(`${API_BASE_URL}/products`),
