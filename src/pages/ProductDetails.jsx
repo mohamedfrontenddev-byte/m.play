@@ -9,7 +9,7 @@ import { useCart } from '../context/CartContext';
 const ProductDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const { data: product, loading, error } = useFetch(`https://fakestoreapi.com/products/${id}`);
+  const { data: product, loading, error } = useFetch(`https://dummyjson.com/products/${id}`);
   const { dispatch } = useCart();
 
   if (loading) return (

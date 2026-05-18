@@ -11,8 +11,8 @@ import { useCart } from '../context/CartContext';
 const Store = () => {
   const { category } = useParams();
   const navigate = useNavigate();
-  const { data: products, loading, error } = useFetch(category ? `https://fakestoreapi.com/products/category/${category}` : 'https://fakestoreapi.com/products');
-  const { data: categories } = useFetch('https://fakestoreapi.com/products/categories');
+  const { data: products, loading, error } = useFetch(category ? `https://dummyjson.com/products/category/${category}` : 'https://dummyjson.com/products');
+  const { data: categories } = useFetch('https://dummyjson.com/products/category-list');
   const [selectedCategory, setSelectedCategory] = useState(category || '');
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredProducts, setFilteredProducts] = useState([]);

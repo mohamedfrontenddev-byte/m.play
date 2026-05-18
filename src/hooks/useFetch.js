@@ -10,7 +10,9 @@ const useFetch = (url) => {
     const fetchData = async () => {
       try {
         const response = await axios.get(url);
-        setData(response.data);
+        // Handle both array (fakestoreapi) and object with products array (dummyjson)
+        const productsData = response.data.products || response.data;
+        setData(productsData);
       } catch (err) {
         setError(err);
       } finally {
